@@ -1,17 +1,1 @@
-{
-    
-    "builds": [
-      {
-        "src": "SchoolManagement/wsgi.py",
-        "use": "@vercel/python",
-        "config":{"maxlamdbaSize":"15mb","runtime":"python3.9"}
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "SchoolManagement/wsgi.py"
-      }
-    ]
-  }
-  
+deleteed
