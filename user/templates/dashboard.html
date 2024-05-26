@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+
+{% load static%}
+
+
+{% block css%}
+<link href={% static "css/dashboard.css"%} rel="stylesheet">
+        
+{% endblock%}
+
+
+{% block content%}
+
+
+<div class="container">
+
+    <br>
+{% for i in user%}
+
+
+<div class="card mb-3 my-5 " >
+    
+    <div class="row g-0 ">
+        
+      <div class="col-md-4 ">
+        <img src="{{i.image.url }}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body" id="text">
+            <center>
+                <br>
+          <h5 class="card-title"> Name:     {{i.LastName}}   {{i.FirstName}}</h5>
+          
+          <p class="card-text">Course:     {{i.Course}}</p>
+          <p class="card-text">Email:    {{i.Email}}</p>
+          <p class="card-text">Number:    {{i.PhoneNumber}}</p>
+          
+          <p class="card-text">Age:  {{i.Age}}</p>
+          <p class="card-text">Address:  {{i.Address}}</p>
+          
+
+            </center>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  {% endfor%}
+</div>
+  {% endblock%}
