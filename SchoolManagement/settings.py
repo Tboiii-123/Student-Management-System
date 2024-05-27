@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f&x4ewk8pszwwf(^=@-7c(_%xc@$!eq4)ixsde7dh-u!9=&wdq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'SchoolManagement.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         
         'APP_DIRS': True,
         'OPTIONS': {
