@@ -50,7 +50,7 @@ def index(request):
 def dashboard(request):
     user_details =Studentdetails.objects.all()
     return render(request,'dashboard.html',{
-        "user":user_details,
+        "details":user_details,
     })
 
 
@@ -106,7 +106,7 @@ def register_user(request):
                 messages.success(request,("You Have Regsitered Successfully Welcome......"))
                 name =request.user
                 
-                return redirect('profile')
+                return redirect('login')
 
    else:
         return render(request,'register.html',{
